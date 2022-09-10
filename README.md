@@ -12,14 +12,14 @@
 ## Features
 
 - Built-in static site generator
-- Breaking HTML smaller files with [Liquid](https://liquidjs.com/index.html)
-- HTML Validation with [HTML-validate](https://html-validate.org/)
+- Breaking HTML smaller files with Liquid
+- HTML Validation with HTML-validate
 - Lint TS files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
 - Compress images
 - Creating SVG sprites
-- Built-in test runner with [Jest](https://jestjs.io/)
+- Built-in test runner with Jest and Playwright
 
 ## Requirements
 
@@ -40,6 +40,7 @@
 - [HTML-vallidate](https://html-validate.org/)
 - [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/)
+- [Playwright](https://playwright.dev/)
 
 ## How to Use
 
@@ -100,6 +101,16 @@ yarn unit
 yarn unit:watch
 ```
 
+Run UI testing.
+
+```bash
+yarn e2e
+```
+
+```bash
+yarn e2e:headed
+```
+
 </details>
 
 ## Liquid
@@ -140,6 +151,12 @@ Jest is built-in in this project. You can run Jest from the command line.
 
 [📖 Learn Jest](https://jestjs.io/)
 
+## Playwright
+
+Playwright enables reliable end-to-end testing.
+
+[📖 Learn Playwright](https://playwright.dev/)
+
 ## SVG sprites
 
 Add SVG files into the icons folder.
@@ -170,6 +187,7 @@ Call the icon with ID.
 - [.stylelintrc.json](https://stylelint.io/user-guide/configure)
 - [imagemin.mjs](https://github.com/imagemin/imagemin)
 - [jest.config.ts](https://jestjs.io/docs/configuration)
+- [playwright.config.ts](https://playwright.dev/docs/test-configuration)
 - [svgconfig.json](https://github.com/svg-sprite/svg-sprite#readme)
 - [svgo.json](https://github.com/svg/svgo#readme)
 - [webpack.config.js](https://webpack.js.org/configuration/)

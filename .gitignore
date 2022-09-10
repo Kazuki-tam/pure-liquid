@@ -28,3 +28,7 @@ dist
 # Version file
 .node-version
 
+# Report
+my-report
+test-results
+# *.spec.ts-snapshots
