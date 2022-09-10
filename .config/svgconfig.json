@@ -1,0 +1,9 @@
+{
+  "dest": "./dist/assets",
+  "mode": {
+    "symbol": {
+      "dest": "svg-sprite",
+      "sprite": "svg-sprite.svg"
+    }
+  }
+}
