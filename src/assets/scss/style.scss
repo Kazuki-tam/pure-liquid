@@ -7,7 +7,32 @@
 @use "./foundation/base";
 
 // =========================================
+// Layout
+// =========================================
+@use "./layout/wrapper";
+@use "./layout/container";
+@use "./layout/main";
+@use "./layout/header";
+@use "./layout/footer";
+
+// =========================================
+// Component
+// =========================================
+@use "./object/component/heading";
+
+// =========================================
+// Project
+// =========================================
+@use "./object/project/header-project";
+@use "./object/project/footer-project";
+@use "./object/project/heading-project";
+@use "./object/project/button-project";
+@use "./object/project/icon-project";
+@use "./object/project/card-project";
+
+// =========================================
 // Utility
 // =========================================
 @use "./utility/screen-reader";
 @use "./utility/text-align";
+@use "./utility/margin";

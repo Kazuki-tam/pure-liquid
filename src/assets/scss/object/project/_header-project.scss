@@ -1,0 +1,35 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Header Project
+======================================== */
+.p-header {
+  background-color: var(--color-brand-tertiary);
+}
+
+.p-header__logo-link {
+  font-size: get-rem(18px);
+  color: var(--color-text-inverted);
+}
+
+.p-header__menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__menu-item {
+  margin-left: 20px;
+}
+
+.p-header__menu-link {
+  padding: 10px 0;
+  color: var(--color-text-secondary);
+  @include hover() {
+    color: var(--color-text-inverted);
+  }
+
+  &.is-active {
+    color: var(--color-text-inverted);
+  }
+}
+

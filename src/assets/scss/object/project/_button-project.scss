@@ -1,0 +1,46 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Button Project
+======================================== */
+.p-btn__wrapper {
+  display: flex;
+  justify-content: center;
+
+  > *:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.p-btn--primary {
+  font-size: get-rem(20px);
+  padding: 10px 20px;
+  background-color: var(--color-ui-secondary);
+  border: 2px solid var(--color-ui-secondary);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text-inverted);
+  transition: .2s all;
+
+  @include hover() {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-text-inverted);
+    }
+  }
+}
+
+.p-btn--sub-primary {
+  font-size: get-rem(20px);
+  padding: 10px 20px;
+  border: 2px solid var(--color-ui-secondary);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: .2s all;
+
+  @include hover() {
+    background-color: var(--color-ui-secondary);
+    color: var(--color-text-inverted);
+  }
+}

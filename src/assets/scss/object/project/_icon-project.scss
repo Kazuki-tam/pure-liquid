@@ -1,0 +1,18 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Icon Project
+======================================== */
+.p-icon {
+  svg {
+    position: relative;
+    top: -0.1em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.p-icon--before-text {
+  @extend .p-icon;
+  margin-left: .1em;
+ }

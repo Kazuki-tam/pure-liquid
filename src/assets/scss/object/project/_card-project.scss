@@ -1,0 +1,28 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Card Project
+======================================== */
+.p-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 16px;
+}
+
+.p-card__item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-ui-tertiary);
+    border: 1px solid var(--color-ui-tertiary);
+  }
+}
+
+.p-card__item-link-wrapper {
+  margin-top: 10px;
+}
+
+.p-card__item-link {
+  color: var(--color-text-link);
+}

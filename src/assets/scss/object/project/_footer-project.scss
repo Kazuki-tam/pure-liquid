@@ -1,0 +1,12 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Footer Project
+======================================== */
+.p-footer {
+  background-color: var(--color-brand-tertiary);
+}
+
+.p-footer__copyright {
+  text-align: center;
+}

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ metadata.language }}">
-
 <head>
   {% include 'sections/head' %}
 </head>
-
-<body>
-  {% include 'sections/header' %}
-  <main>
+<body id="page-{{ pageId }}"">
+  <div class="l-wrapper">
+    {% include 'sections/header' %}
+    <main class="l-main">
+    {% include 'snippets/breadcrumb' %}
     {{ content }}
-  </main>
-  {% include 'sections/footer' %}
+    </main>
+    {% include 'sections/footer' %}
+  </div>
 </body>
-
 </html>

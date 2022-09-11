@@ -1,1 +1,22 @@
-<header>Header</header>
+<header class="l-header p-header">
+  <div class="p-header__logo">
+    <a href="/" class="p-header__logo-link">🦋 SWL</a>
+  </div>
+  <div class="p-header__menu">
+    <ul class="p-header__menu-list">
+      <li class="p-header__menu-item">
+        <a href="/docs/" class="p-header__menu-link{% if pageId == "docs" %} is-active{% endif %}">Docs</a>
+      </li>
+      <li class="p-header__menu-item">
+        <a href="https://github.com/Kazuki-tam/static-website-liquid" target="_blank" rel="noopener" class="p-header__menu-link">
+          GitHub
+          <span class="p-icon--before-text">
+            <svg class="icon" role="img" width="1em" height="1em">
+              <use xlink:href="/assets/svg-sprite/svg-sprite.svg#external"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
