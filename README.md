@@ -134,7 +134,7 @@ I recommend you introduce the best architecture in each project.
 - [BEM](https://en.bem.info/methodology/)
 - [OOCSS](http://oocss.org/)
 - [SMACSS](http://smacss.com/)
-- [Enduring CSS](https://ecss.benfrain.com/)
+- [ECSS](https://ecss.benfrain.com/)
 - [FLOCSS](https://github.com/hiloki/flocss)
 - [PRECSS](https://precss.io/ja/)
 
