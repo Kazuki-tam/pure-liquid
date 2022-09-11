@@ -24,6 +24,8 @@
 .p-header__menu-link {
   padding: 10px 0;
   color: var(--color-text-secondary);
+  transition: .2s color;
+
   @include hover() {
     color: var(--color-text-inverted);
   }

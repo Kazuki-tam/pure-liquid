@@ -6,7 +6,7 @@
 <body id="page-{{ pageId }}"">
   <div class="l-wrapper">
     {% include 'sections/header' %}
-    <main class="l-main">
+    <main class="l-main{% if breadcrumbs %}--no-mt{% endif %}">
     {% include 'snippets/breadcrumb' %}
     {{ content }}
     </main>

@@ -1,5 +1,21 @@
+const htmlmin = require("html-minifier");
+const MODE = process.env.NODE_ENV;
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/assets/');
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if(MODE === "production" && outputPath && outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
   // Return your Object options:
   return {
     templateFormats: ['liquid'],

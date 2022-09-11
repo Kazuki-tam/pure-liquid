@@ -25,4 +25,9 @@
 
 .p-card__item-link {
   color: var(--color-text-link);
+  transition: .2s opacity;
+
+  @include hover() {
+    opacity: .8;
+  }
 }
