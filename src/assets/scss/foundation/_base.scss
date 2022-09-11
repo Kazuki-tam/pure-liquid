@@ -58,11 +58,12 @@ body {
   font-family: $font-family-primary;
   font-size: $font-size-primary;
   line-height: 1.6;
+  color: $color-text-primary;
   font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
-  color: $color-text-primary;
+
   @media (prefers-color-scheme: dark) {
     background-color: $color-canvas-inverted;
     color: $color-text-inverted;

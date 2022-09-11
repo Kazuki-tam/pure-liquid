@@ -22,16 +22,15 @@
 }
 
 .p-header__menu-link {
-  padding: 10px 0;
-  color: var(--color-text-secondary);
-  transition: .2s color;
-
-  @include hover() {
+  @include hover {
     color: var(--color-text-inverted);
   }
+
+  padding: 10px 0;
+  color: var(--color-text-secondary);
+  transition: 0.2s color;
 
   &.is-active {
     color: var(--color-text-inverted);
   }
 }
-

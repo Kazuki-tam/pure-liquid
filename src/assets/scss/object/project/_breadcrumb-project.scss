@@ -13,14 +13,16 @@
 }
 
 .p-breadcrumb__item-link {
-  color: var(--color-text-secondary);
-  transition: .2s color;
-  @include hover() {
+  @include hover {
     color: var(--color-text-primary);
+
     @media (prefers-color-scheme: dark) {
       color: var(--color-text-inverted);
     }
   }
+
+  color: var(--color-text-secondary);
+  transition: 0.2s color;
 }
 
 .p-breadcrumb__item {
@@ -28,8 +30,8 @@
     margin-left: 8px;
 
     &::before {
-      display: inline-block;
       content: ">";
+      display: inline-block;
       margin-right: 4px;
     }
   }

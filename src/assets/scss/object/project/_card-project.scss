@@ -5,17 +5,18 @@
 ======================================== */
 .p-card__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .p-card__item {
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
+
   @media (prefers-color-scheme: dark) {
-    background-color: var(--color-ui-tertiary);
     border: 1px solid var(--color-ui-tertiary);
+    background-color: var(--color-ui-tertiary);
   }
 }
 
@@ -24,10 +25,10 @@
 }
 
 .p-card__item-link {
-  color: var(--color-text-link);
-  transition: .2s opacity;
-
-  @include hover() {
-    opacity: .8;
+  @include hover {
+    opacity: 0.8;
   }
+
+  color: var(--color-text-link);
+  transition: 0.2s opacity;
 }

@@ -4,41 +4,42 @@
   Heading Project
 ======================================== */
 @keyframes typing {
-	from {
-		width: 0;
-	}
+  from {
+    width: 0;
+  }
 }
+
 @keyframes blink {
-	50% {
-		border-color: transparent;
-	}
+  50% {
+    border-color: transparent;
+  }
 }
 
 .p-heading--main-title {
-  text-align: center;
-  font-size: get-vw(28px);
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: var(--color-brand-primary);
-
   @include media-query(md) {
-    width: 9ch;
-    margin: 0 auto;
-    line-height: 1;
     overflow: hidden;
+    width: 11ch;
+    margin: 0 auto;
     white-space: nowrap;
-    border-right: 5px solid var(--color-brand-primary);
     font-size: get-rem(68px);
-    animation: typing 3s steps(18), blink .4s step-end infinite alternate;
+    line-height: 1;
+    border-right: 5px solid var(--color-brand-primary);
+    animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
   }
+
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: get-vw(28px);
+  font-weight: 500;
+  color: var(--color-brand-primary);
 }
 
 .p-heading--main-subtitle {
-  text-align: center;
-  font-size: get-vw(16px);
-  margin-top: 20px;
-
   @include media-query(md) {
     font-size: get-rem(24px);
   }
+
+  margin-top: 20px;
+  text-align: center;
+  font-size: get-vw(16px);
 }

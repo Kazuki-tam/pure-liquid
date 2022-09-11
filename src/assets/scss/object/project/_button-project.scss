@@ -13,34 +13,35 @@
 }
 
 .p-btn--primary {
-  font-size: get-rem(20px);
-  padding: 10px 20px;
-  background-color: var(--color-ui-secondary);
-  border: 2px solid var(--color-ui-secondary);
-  border-radius: 8px;
-  text-decoration: none;
-  color: var(--color-text-inverted);
-  transition: .2s all;
-
-  @include hover() {
+  @include hover {
     background-color: transparent;
     color: var(--color-text-primary);
+
     @media (prefers-color-scheme: dark) {
       color: var(--color-text-inverted);
     }
   }
+
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: get-rem(20px);
+  border: 2px solid var(--color-ui-secondary);
+  border-radius: 8px;
+  background-color: var(--color-ui-secondary);
+  color: var(--color-text-inverted);
+  transition: 0.2s all;
 }
 
 .p-btn--sub-primary {
-  font-size: get-rem(20px);
-  padding: 10px 20px;
-  border: 2px solid var(--color-ui-secondary);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: .2s all;
-
-  @include hover() {
+  @include hover {
     background-color: var(--color-ui-secondary);
     color: var(--color-text-inverted);
   }
+
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: get-rem(20px);
+  border: 2px solid var(--color-ui-secondary);
+  border-radius: 8px;
+  transition: 0.2s all;
 }

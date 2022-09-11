@@ -1,6 +1,6 @@
-module.exports = function() {
+module.exports = function () {
   const data = {
-    currentDate: new Date().getFullYear()
+    currentDate: new Date().getFullYear(),
   };
   return data;
 };

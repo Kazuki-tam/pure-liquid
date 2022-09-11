@@ -5,19 +5,31 @@
 ======================================== */
 .p-icon {
   svg {
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
     top: -0.1em;
-    vertical-align: middle;
-    display: inline-block;
   }
 }
 
 .p-icon--before-text {
-  @extend .p-icon;
-  margin-left: .1em;
- }
+  margin-left: 0.1em;
 
- .p-icon--after-text {
-  @extend .p-icon;
-  margin-right: .1em;
- }
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+  }
+}
+
+.p-icon--after-text {
+  margin-right: 0.1em;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+  }
+}
