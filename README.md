@@ -1,13 +1,13 @@
-# static-website-liquid
+# Pure Liquid
 
-`static-website-liquid` is a starter kit with Liquid for front-end projects. This starter kit focuses on building a static website and suits small to medium projects like a landing page and a corporate website.
+`Pure Liquid` is a starter kit with Liquid for front-end projects. This starter kit focuses on building a static website and suits small to medium projects like a landing page and a corporate website.
 
 ## Status
 
-[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/static-website-liquid)](https://github.com/Kazuki-tam/static-website-liquid/releases/tag/v0.0.1)
-[![Issues](https://img.shields.io/github/issues/Kazuki-tam/static-website-liquid)](https://github.com/Kazuki-tam/static-website-liquid/issues)
+[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/pure-liquid)](https://github.com/Kazuki-tam/pure-liquid/releases/tag/v0.0.1)
+[![Issues](https://img.shields.io/github/issues/Kazuki-tam/pure-liquid)](https://github.com/Kazuki-tam/pure-liquid/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2022)
-![Release date](https://img.shields.io/github/release-date/Kazuki-tam/static-website-liquid)
+![Release date](https://img.shields.io/github/release-date/Kazuki-tam/pure-liquid)
 
 ## Features
 

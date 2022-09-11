@@ -16,3 +16,8 @@
   @extend .p-icon;
   margin-left: .1em;
  }
+
+ .p-icon--after-text {
+  @extend .p-icon;
+  margin-right: .1em;
+ }
