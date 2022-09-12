@@ -16,22 +16,23 @@
 }
 
 .p-heading--main-title {
-  @include media-query(md) {
-    overflow: hidden;
-    width: 11ch;
-    margin: 0 auto;
-    white-space: nowrap;
-    font-size: get-rem(68px);
-    line-height: 1;
-    border-right: 5px solid var(--color-brand-primary);
-    animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
-  }
-
   text-align: center;
   letter-spacing: 2px;
-  font-size: get-vw(28px);
+  font-size: get-vw(40px);
   font-weight: 500;
   color: var(--color-brand-primary);
+  overflow: hidden;
+  width: 10ch;
+  margin: 0 auto;
+  white-space: nowrap;
+  line-height: 1;
+  border-right: 5px solid var(--color-brand-primary);
+  animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
+
+  @include media-query(md) {
+    width: 11ch;
+    font-size: get-rem(68px);
+  }
 }
 
 .p-heading--main-subtitle {
