@@ -1,6 +1,6 @@
 {
-  "name": "static-website-liquid",
-  "version": "0.0.1",
+  "name": "pure-liquid",
+  "version": "0.1.0",
   "description": "Starter kit with Liquid for static website.",
   "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "license": "MIT",
