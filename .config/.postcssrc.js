@@ -1,4 +1,6 @@
-module.exports = (ctx) => ({
+const MODE = process.env.NODE_ENV;
+
+module.exports = () => ({
   map: false,
   plugins: {
     'postcss-flexbugs-fixes': true,
@@ -6,9 +8,12 @@ module.exports = (ctx) => ({
     'autoprefixer': {
       grid: "autoplace",
     },
-    'cssnano': ctx.env === 'production' ? { preset: 'default' } : false
+    '@fullhuman/postcss-purgecss': {
+      content: ['./dist/**/*.html']
+    },
+    'cssnano': MODE === 'production' ? { preset: 'default' } : false
   },
   autoprefixer: {
     browsers: "last 2 versions"
-  }
+  },
 })
