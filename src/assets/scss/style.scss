@@ -32,8 +32,14 @@
 @use "./object/project/card-project";
 
 // =========================================
+// Page
+// =========================================
+@use "./page/error-404";
+
+// =========================================
 // Utility
 // =========================================
 @use "./utility/screen-reader";
 @use "./utility/text-align";
 @use "./utility/margin";
+@use "./utility/text-size";
