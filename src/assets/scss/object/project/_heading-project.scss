@@ -16,23 +16,23 @@
 }
 
 .p-heading--main-title {
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: get-vw(40px);
-  font-weight: 500;
-  color: var(--color-brand-primary);
-  overflow: hidden;
-  width: 10ch;
-  margin: 0 auto;
-  white-space: nowrap;
-  line-height: 1;
-  border-right: 5px solid var(--color-brand-primary);
-  animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
-
   @include media-query(md) {
     width: 11ch;
     font-size: get-rem(68px);
   }
+
+  overflow: hidden;
+  width: 10ch;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-size: get-vw(40px);
+  font-weight: 500;
+  line-height: 1;
+  border-right: 5px solid var(--color-brand-primary);
+  color: var(--color-brand-primary);
+  animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
 }
 
 .p-heading--main-subtitle {
