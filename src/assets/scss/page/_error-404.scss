@@ -1,0 +1,13 @@
+@use "../setting" as *;
+
+/* ========================================
+  404 Error
+======================================== */
+.error-404__title {
+  text-align: center;
+  font-size: get-rem(100px);
+}
+
+.error-404__title-text {
+  font-size: get-rem(128px);
+}
