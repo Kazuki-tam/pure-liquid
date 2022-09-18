@@ -4,6 +4,9 @@
   Breadcrumb Project
 ======================================== */
 .p-breadcrumb {
+  @include media-query(xl) {
+    padding: 0 26px;
+  }
   margin-top: 10px;
   margin-bottom: 10px;
 }
