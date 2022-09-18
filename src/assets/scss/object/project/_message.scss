@@ -1,0 +1,19 @@
+@use "../../setting" as *;
+
+/* ========================================
+  Message Project
+======================================== */
+.p-message--caution {
+  width: 100%;
+  margin: 16px auto;
+  padding: 16px;
+  line-height: 1.4;
+  border: 1px solid var(--color-ui-warn);
+  border-radius: 8px;
+  background-color: rgb(255 183 0 / 17%);
+}
+
+.p-message__title {
+  margin-bottom: 8px;
+  font-weight: bold;
+}

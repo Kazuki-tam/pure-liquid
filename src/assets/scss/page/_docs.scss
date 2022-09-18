@@ -1,0 +1,12 @@
+@use "../setting" as *;
+
+/* ========================================
+  Docs
+======================================== */
+.docs__container {
+  margin-top: 20px;
+}
+
+.docs__text {
+  font-size: get-rem(18px);
+}

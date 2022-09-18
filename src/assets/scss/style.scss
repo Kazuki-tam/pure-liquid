@@ -30,11 +30,13 @@
 @use "./object/project/button-project";
 @use "./object/project/icon-project";
 @use "./object/project/card-project";
+@use "./object/project/message";
 
 // =========================================
 // Page
 // =========================================
 @use "./page/error-404";
+@use "./page/docs";
 
 // =========================================
 // Utility
