@@ -1,18 +1,20 @@
 ---
 layout: layout/theme.liquid
-title: Learn more about features
+eleventyComputed:
+  title: "{{ doc.title }}"
 description: Getting Started with SWL, and learn more about all features.
 pagePath: docs/
 pageId: docs
 breadcrumbs: [{item: "Docs", path: "docs/"}]
 ---
 <div class="l-container">
-  <h1 class="c-heading--lev1">📖 {{ title }}.</h1>
+  <h1 class="c-heading--lev1">📖 {{ doc.title }}.</h1>
   <div class="docs__container">
     <p class="docs__text">Welcome to the Pure Liquid documentation!</p>
     <div class="p-message--caution">
       <p class="p-message__title">⚡️ Note</p>
       <p class="p-message__des">This page is not still completed. I'm working in progress.🫠</p>
     </div>
+    {{ doc.body }}
   </div>
 </div>

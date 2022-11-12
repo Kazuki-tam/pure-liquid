@@ -22,7 +22,7 @@
     "release:webpack": "npm-run-all webpack:prd",
     "lint": "npm-run-all -p eslint stylelint checkTypes htmlValidate",
     "lint:fix": "npm-run-all eslint:fix stylelint:fix format",
-    "copy": "cpx './src/**/*.{css,js,pdf}' './dist'",
+    "copy": "cpx './src/!(_data)/**/*.{css,js,pdf}' './dist'",
     "copy:public": "cpx './src/public/**/*' './dist'",
     "imagemin": "node .config/imagemin.mjs",
     "svgsprite": "svg-sprite -C .config/svgconfig.json —shape-transform-svgo .config/svgo.json src/assets/icon/*svg",
@@ -122,5 +122,9 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "dotenv": "^16.0.3"
   }
 }
