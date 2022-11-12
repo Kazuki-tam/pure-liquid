@@ -10,3 +10,13 @@
 .docs__text {
   font-size: get-rem(18px);
 }
+
+.docs__link {
+  @include hover {
+    opacity: 0.8;
+  }
+
+  font-size: get-rem(16px);
+  color: var(--color-text-link);
+  transition: 0.2s opacity;
+}

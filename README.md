@@ -58,10 +58,22 @@ Start your project in development mode
 yarn start
 ```
 
+Start your project in production mode
+
+```bash
+yarn serve
+```
+
 Build your project for development
 
 ```bash
 yarn build
+```
+
+Build your project for production
+
+```bash
+yarn release
 ```
 
 Lint your project files
