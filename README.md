@@ -14,7 +14,7 @@
 - Built-in static site generator
 - Breaking HTML smaller files with Liquid
 - HTML Validation with HTML-validate
-- Lint TS files with ESLint
+- Lint TypeScript files with ESLint
 - Lint SCSS files with Stylelint
 - Format code with prettier
 - Compress images
@@ -137,19 +137,6 @@ You can manage style sheets logically with Sass.
 
 [📖 Learn Sass](https://sass-lang.com/)
 
-## CSS Architecture
-
-I recommend you introduce the best architecture in each project.
-
-[📖 Learn CSS Architecture](https://philipwalton.com/articles/css-architecture/)
-
-- [BEM](https://en.bem.info/methodology/)
-- [OOCSS](http://oocss.org/)
-- [SMACSS](http://smacss.com/)
-- [ECSS](https://ecss.benfrain.com/)
-- [FLOCSS](https://github.com/hiloki/flocss)
-- [PRECSS](https://precss.io/ja/)
-
 ## TypeScript
 
 This starter kit supports TypeScript.
@@ -187,6 +174,9 @@ Call the icon with ID.
 
 ## Configurations
 
+<details>
+<summary>Configuration list</summary>
+
 - [package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)
 - [tsconfig.json](https://www.typescriptlang.org/tsconfig)
 - [.gitignore](https://github.com/github/gitignore)
@@ -203,6 +193,8 @@ Call the icon with ID.
 - [svgconfig.json](https://github.com/svg-sprite/svg-sprite#readme)
 - [svgo.json](https://github.com/svg/svgo#readme)
 - [webpack.config.js](https://webpack.js.org/configuration/)
+
+</details>
 
 ## Recommended IDE
 
