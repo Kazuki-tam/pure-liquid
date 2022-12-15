@@ -3,27 +3,43 @@ Breadcrumb
 https://developers.google.com/search/docs/advanced/structured-data/breadcrumb#microdata
 {% endcomment %}
 {% if breadcrumbs %}
-<nav class="p-breadcrumb" aria-label="Breadcrumb list">
-  <ol class="p-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
-    <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="p-breadcrumb__item-link" itemprop="item" href="{{ metadata.url }}">
-        <span itemprop="name">HOME</span>
-      </a>
-      <meta itemprop="position" content="1" />
-    </li>
-    {% for breadcrumb in breadcrumbs %}
-    <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        {% if forloop.last == true %}
-        <span itemprop="name">{{ breadcrumb.item }}</span>
-        {% else %}
-        <a class="p-breadcrumb__item-link" itemprop="item" href="{{ metadata.url }}{{ breadcrumb.path }}">
-          <span itemprop="name">{{ breadcrumb.item }}</span>
+  <nav class="p-breadcrumb" aria-label="Breadcrumb list">
+    <ol
+      class="p-breadcrumb__list"
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList">
+      <li
+        class="p-breadcrumb__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem">
+        <a
+          class="p-breadcrumb__item-link"
+          itemprop="item"
+          href="{{ metadata.url }}">
+          <span itemprop="name">HOME</span>
         </a>
-        {% endif %}
-      <meta itemprop="position" content="{{ forloop.index | plus: 1 }}" />
-    </li>
-    {% endfor %}
-  </ol>
-</nav>
-{% endif%}
-
+        <meta itemprop="position" content="1" />
+      </li>
+      {% for breadcrumb in breadcrumbs %}
+        <li
+          class="p-breadcrumb__item"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem">
+          {% if forloop.last == true %}
+            <span itemprop="name">{{ breadcrumb.item }}</span>
+          {% else %}
+            <a
+              class="p-breadcrumb__item-link"
+              itemprop="item"
+              href="{{ metadata.url }}/{{ breadcrumb.path }}">
+              <span itemprop="name">{{ breadcrumb.item }}</span>
+            </a>
+          {% endif %}
+          <meta itemprop="position" content="{{ forloop.index | plus: 1 }}" />
+        </li>
+      {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

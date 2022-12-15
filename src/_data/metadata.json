@@ -1,7 +1,7 @@
 {
   "siteName": "Pure Liquid",
   "title": "Pure Liquid",
-  "url": "https://pure-liquid-dev.netlify.app/",
+  "url": "https://pure-liquid-dev.netlify.app",
   "language": "en",
   "description": "Starter kit with Liquid for static website.",
   "ogpImage": "ogp.jpg",
