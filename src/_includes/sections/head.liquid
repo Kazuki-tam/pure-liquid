@@ -12,6 +12,9 @@
 <title>{{ title_text }}</title>
 <meta name="description" content="{{ description_text }}">
 <meta name="format-detection" content="telephone=no">
+{% if eleventyExcludeFromCollections %}
+  <meta name="robots" content="noindex">
+{% endif %}
 <link
   rel="icon"
   type="image/png"
