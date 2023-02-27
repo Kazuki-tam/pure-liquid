@@ -10,18 +10,18 @@
     "serve": "NODE_ENV=production eleventy --serve --config .config/.eleventy.js",
     "start": "npm-run-all -p 'start:*'",
     "start:htmlandstyle": "npm-run-all -p liquid:watch css:watch",
-    "start:webpack": "npm-run-all webpack:watch",
+    "start:esbuild": "npm-run-all esbuild:dev",
     "start:imagemin": "onchange 'src/assets/img/' -- npm-run-all imagemin",
     "start:copy": "cpx './src/!(_data)/**/*.{css,js,pdf}' './dist' --watch",
     "build": "npm-run-all clean -p 'build:*' copy copy:public imagemin svgsprite",
     "build:htmlandstyle": "NODE_ENV=development npm-run-all liquid sass:dev postCss",
-    "build:webpack": "npm-run-all webpack:dev",
+    "build:esbuild": "npm-run-all esbuild:dev",
     "release": "npm-run-all clean -p 'release:*' copy copy:public imagemin svgsprite",
     "release:sass": "NODE_ENV=production npm-run-all sass:prd postCss",
     "release:htmlandstyle": "NODE_ENV=production npm-run-all liquid sass:prd postCss",
     "release:webpack": "npm-run-all webpack:prd",
     "liquid": "eleventy --config .config/.eleventy.js",
-    "liquid:watch": "eleventy --serve --config .config/.eleventy.js",
+    "liquid:watch": "eleventy --serve --incremental --config .config/.eleventy.js",
     "lint": "npm-run-all -p eslint stylelint checkTypes htmlValidate",
     "lint:fix": "npm-run-all eslint:fix stylelint:fix format",
     "copy": "cpx './src/!(_data)/**/*.{css,js,pdf}' './dist'",
@@ -31,6 +31,8 @@
     "webpack:watch": "cross-env NODE_ENV=development webpack --config .config/webpack.config.js --watch",
     "webpack:dev": "cross-env NODE_ENV=development webpack --config .config/webpack.config.js",
     "webpack:prd": "cross-env NODE_ENV=production webpack --config .config/webpack.config.js",
+    "esbuild:dev": "cross-env NODE_ENV=development ts-node .config/build.ts",
+    "esbuild:prd": "cross-env NODE_ENV=production ts-node .config/build.ts",
     "css:watch": "npm-run-all -p sass:watch postCss:watch",
     "sass:watch": "sass ./src/assets/scss:dist/assets/css/ --watch",
     "sass:dev": "sass ./src/assets/scss:dist/assets/css/ --no-unicode",
@@ -128,5 +130,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.10"
   }
 }
