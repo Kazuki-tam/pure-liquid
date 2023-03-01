@@ -4,6 +4,8 @@
     "close-order": "error",
     "no-trailing-whitespace": "off",
     "element-permitted-content": "off",
-    "void-style": "off"
+    "void-style": "off",
+    "doctype-style": "off",
+    "attribute-boolean-style": "off"
   }
 }

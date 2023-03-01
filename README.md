@@ -31,6 +31,7 @@
 - [11ty](https://www.11ty.dev/)
 - [Liquid](https://shopify.github.io/liquid/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [esbuild](https://esbuild.github.io/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
 - [imagemin](https://github.com/imagemin/imagemin#readme)
@@ -192,7 +193,7 @@ Call the icon with ID.
 - [playwright.config.ts](https://playwright.dev/docs/test-configuration)
 - [svgconfig.json](https://github.com/svg-sprite/svg-sprite#readme)
 - [svgo.json](https://github.com/svg/svgo#readme)
-- [webpack.config.js](https://webpack.js.org/configuration/)
+- [esbuild.ts](https://esbuild.github.io/)
 
 </details>
 
