@@ -1,4 +1,3 @@
-
 const esbuild = require('esbuild')
 const path = require('path')
 
@@ -23,5 +22,21 @@ const config = {
   tsconfig: path.resolve(__dirname, '../tsconfig.json'),
 }
 
-esbuild.build(config);
+async function build() {
+  await esbuild.build(config);
+}
 
+async function watch() {
+  let ctx = await esbuild.context(config);
+  await ctx.watch();
+}
+
+// Check if command line argument is "build" or "watch"
+const command = process.argv[2];
+if (command === 'build') {
+  build();
+} else if (command === 'watch') {
+  watch();
+} else {
+  console.error(`Invalid command '${command}'. Use 'build' or 'watch'.`);
+}
