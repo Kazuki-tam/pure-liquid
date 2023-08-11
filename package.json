@@ -1,6 +1,6 @@
 {
   "name": "pure-liquid",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Starter kit with Liquid for static website.",
   "author": "Kazuki Yonemoto (https://dev.to/tim_yone)",
   "homepage": "https://github.com/Kazuki-tam/pure-liquid#readme",
@@ -10,16 +10,16 @@
     "serve": "NODE_ENV=production eleventy --serve --config .config/.eleventy.js",
     "start": "npm-run-all -p 'start:*'",
     "start:htmlandstyle": "npm-run-all -p liquid:watch css:watch",
-    "start:esbuild": "npm-run-all esbuild:watch",
+    "start:rspack": "npm-run-all rspack:watch",
     "start:imagemin": "onchange 'src/assets/img/' -- npm-run-all imagemin",
     "start:copy": "cpx './src/!(_data)/**/*.{css,js,pdf}' './dist' --watch",
     "build": "npm-run-all clean -p 'build:*' copy copy:public imagemin svgsprite",
     "build:htmlandstyle": "NODE_ENV=development npm-run-all liquid sass:dev postCss",
-    "build:esbuild": "npm-run-all checkTypes esbuild:dev",
+    "build:rspack": "npm-run-all checkTypes rspack:dev",
     "release": "npm-run-all clean -p 'release:*' copy copy:public imagemin svgsprite",
     "release:sass": "NODE_ENV=production npm-run-all sass:prd postCss",
     "release:htmlandstyle": "NODE_ENV=production npm-run-all liquid sass:prd postCss",
-    "release:esbuild": "npm-run-all checkTypes esbuild:prd",
+    "release:rspack": "npm-run-all checkTypes rspack:prd",
     "liquid": "eleventy --config .config/.eleventy.js",
     "liquid:watch": "eleventy --serve --incremental --config .config/.eleventy.js",
     "lint": "npm-run-all -p eslint stylelint checkTypes htmlValidate",
@@ -28,9 +28,9 @@
     "copy:public": "cpx './src/public/**/*' './dist'",
     "imagemin": "node .config/imagemin.mjs",
     "svgsprite": "svg-sprite -C .config/svgconfig.json —shape-transform-svgo .config/svgo.json src/assets/icon/*svg",
-    "esbuild:watch": "cross-env NODE_ENV=development ts-node .config/esbuild.ts watch",
-    "esbuild:dev": "cross-env NODE_ENV=development ts-node .config/esbuild.ts build",
-    "esbuild:prd": "cross-env NODE_ENV=production ts-node .config/esbuild.ts build",
+    "rspack:dev": "cross-env NODE_ENV=development rspack build -c .config/rspack.config.js",
+    "rspack:prd": "cross-env NODE_ENV=production rspack build -c .config/rspack.config.js",
+    "rspack:watch": "cross-env NODE_ENV=development rspack -c .config/rspack.config.js --watch",
     "css:watch": "npm-run-all -p sass:watch postCss:watch",
     "sass:watch": "sass ./src/assets/scss:dist/assets/css/ --watch",
     "sass:dev": "sass ./src/assets/scss:dist/assets/css/ --no-unicode",
@@ -59,6 +59,7 @@
     "@11ty/eleventy-fetch": "^3.0.0",
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "@playwright/test": "^1.25.2",
+    "@rspack/cli": "^0.2.11",
     "@types/cpx": "^1.5.2",
     "@types/eslint": "^8.4.6",
     "@types/html-minifier": "^4.0.2",
@@ -125,8 +126,5 @@
   },
   "engines": {
     "node": ">=16"
-  },
-  "dependencies": {
-    "esbuild": "^0.17.10"
   }
 }
