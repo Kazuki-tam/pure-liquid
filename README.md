@@ -6,7 +6,7 @@
 
 [![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/pure-liquid)](https://github.com/Kazuki-tam/pure-liquid/releases/tag/v0.0.1)
 [![Issues](https://img.shields.io/github/issues/Kazuki-tam/pure-liquid)](https://github.com/Kazuki-tam/pure-liquid/issues)
-![Maintenance](https://img.shields.io/maintenance/yes/2022)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
 ![Release date](https://img.shields.io/github/release-date/Kazuki-tam/pure-liquid)
 
 ## Features
@@ -31,7 +31,7 @@
 - [11ty](https://www.11ty.dev/)
 - [Liquid](https://shopify.github.io/liquid/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [esbuild](https://esbuild.github.io/)
+- [Rspack](https://www.rspack.dev/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
 - [imagemin](https://github.com/imagemin/imagemin#readme)
@@ -193,7 +193,7 @@ Call the icon with ID.
 - [playwright.config.ts](https://playwright.dev/docs/test-configuration)
 - [svgconfig.json](https://github.com/svg-sprite/svg-sprite#readme)
 - [svgo.json](https://github.com/svg/svgo#readme)
-- [esbuild.ts](https://esbuild.github.io/)
+- [rspack.config.js](https://www.rspack.dev/config.html)
 
 </details>
 
