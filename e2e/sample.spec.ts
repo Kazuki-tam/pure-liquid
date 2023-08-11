@@ -1,5 +1,4 @@
-import { test, expect } from "@playwright/test";
-import { webkit } from "playwright";
+import { test, expect, webkit } from "@playwright/test";
 
 test("Visual regression testing of docs page", async () => {
   const browser = await webkit.launch();

@@ -52,5 +52,7 @@
   line-height: 1;
   border-right: 5px solid var(--color-brand-primary);
   color: var(--color-brand-primary);
-  animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;
+  animation:
+    typing 3s steps(18),
+    blink 0.4s step-end infinite alternate;
 }
