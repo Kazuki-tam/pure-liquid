@@ -31,7 +31,7 @@
     "rspack:dev": "cross-env NODE_ENV=development rspack build -c .config/rspack.config.js",
     "rspack:prd": "cross-env NODE_ENV=production rspack build -c .config/rspack.config.js",
     "rspack:watch": "cross-env NODE_ENV=development rspack -c .config/rspack.config.js --watch",
-    "css:watch": "npm-run-all -p sass:watch postCss:watch",
+    "css:watch": "npm-run-all -s sass:watch postCss:watch",
     "sass:watch": "sass ./src/assets/scss:dist/assets/css/ --watch",
     "sass:dev": "sass ./src/assets/scss:dist/assets/css/ --no-unicode",
     "sass:prd": "sass ./src/assets/scss:dist/assets/css/ --no-source-map --no-unicode",
